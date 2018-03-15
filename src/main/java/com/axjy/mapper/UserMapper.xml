@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.axjy.mapper.UserMapper">
+
+   <select id="find" resultType="user">
+       SELECT * from smbms_user WHERE user_Code=#{userCode}and user_Password=#{userPassword}
+</select>
+
+</mapper>
